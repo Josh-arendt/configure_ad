@@ -171,5 +171,131 @@ Select Inbound Rules.
 Sort by protocols and find the cluster of ICMPv4 inbound rules. Right-click and enable the two "Core Networking Diagnostics."
 <br />
 
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/2e6cc33e-ce6e-4b7a-8995-cc3b1c96d291)
+
+</p>
+<p>
+Now we will test the connection status between DC-1 and Client-1. Start by selecting the Client-1 VM. Copy Public IP address.
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/9f4085ea-cc84-49fc-8455-1f53383c65d3)
+
+</p>
+<p>
+Open Remote Desktop Connection and paste Client-1's public IP address. Click connect. 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/f312d07a-44a8-4210-b64f-d41c5dcdee5b)
+
+</p>
+<p>
+Type in username and password for Cliet-1. Click OK. 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/22cdcea7-8c65-4829-9b25-69774d0eb198)
+
+</p>
+<p>
+Once inside Client-1, open the Command Prompt. 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/021f924b-962c-4690-8845-e83546cf87c7)
+
+</p>
+<p>
+Ping DC-1's private ip address (10.0.0.4 for this example). Ensure CLient-1 has recieved all 4 responses. 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/6ba5eff0-6d8e-4c54-a8f6-ccc5066562ec)
+
+</p>
+<p>
+Now we are going to install Active Directory and promote DC-1 to a domain controller. Start by going back in to DC-1. 
+Open Server Manager, and select "Add Roles and Features." 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/e49e629f-5776-47bc-8a52-da023bbd5442)
+
+</p>
+<p>
+Continue to proceed until you arrive at the "Server Roles" page. Select "Active Directory Domain Services."
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/29d64c7c-07d2-4b71-9802-9dc156ad847c)
+
+</p>
+<p>
+Proceed through the set up until you are prompted to install. Click "Install."
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/4245c595-0742-45b4-a1ac-bd8e6377ec87)
+
+</p>
+<p>
+Once installation is complete, select "Close."
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/da74f0da-339a-46f7-936a-95ef60cbe5e5)
+
+</p>
+<p>
+Inside Server Manager, click the flag icon in the top right-hand corner and promote to server to domain controller.
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/d8928308-764f-4c1c-9963-ad210e346dbc)
+
+</p>
+<p>
+Select "Add a new forest", name your domain (mydomain.com for this example), and click Next. 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/16152dd3-e0b6-4780-8c9b-ff17ca7178b6)
+
+</p>
+<p>
+Create a domain password.
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/e8679345-0a21-428e-80a8-e02be7a34aff)
+
+</p>
+<p>
+Continue through the set up until you are prompted to install. CLick "Install." DC-1 will need to restart after installation. 
+<br />
+
+<p>
+
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/d2bc2cf1-11e5-44c9-9408-6fa8d9bd8995)
+
+</p>
+<p>
+Congratulations!! Active Directory has successfully beeen installed and is ready to be implemented. Log back into DC-1, now with the newly created domain.
+<br />
 
 
