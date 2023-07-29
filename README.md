@@ -27,6 +27,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 4 Assign Client-1 to newly created domain.
 
 <h2>Deployment and Configuration Steps</h2>
+![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/0b85b585-4547-46e0-bb1f-e75a470a944e)
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
