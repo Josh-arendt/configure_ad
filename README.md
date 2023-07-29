@@ -22,15 +22,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 1 Create a Windows server VM (DC-1) and a Windows VM (Client-1, used to test connectivity/access to Active Directory) within Microsoft Azure.
-- Step 2 Assign Active Directory Domain Services to DC-1 and promote server to domain controller.
+- Step 2 Install Active Directory Domain Services to DC-1 and promote server to domain controller.
 - Step 3 Create new domain. 
-- Step 4 Assign Client-1 to newly created domain.
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
   
-  ![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/0defb3fb-3c95-4fe1-b111-d3132a1573ce)
+  ![image](https://github.com/Josh-arendt/configure_ad/assets/140751318/0defb3fb-3c95-4fe1-b111-d3132a1573ce) 
 
 </p>
 <p>
